@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Next Level Week 6 Together - Letmeask
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/felipepanegalli/nlw6-react-letmeask/blob/main/LICENSE.md)
 
-## Available Scripts
+[Versão em Português](http://github.com) | [English Version](http://github.com)
 
-In the project directory, you can run:
+## Sobre o projeto
+Este projeto foi desenvolvido na semana de programação Next Level Week 6
+organizada pela Rocketseat e ministrada pelo Diego Fernandes.
 
-### `yarn start`
+O Letmeask é uma aplicação web com o propósito de criação de salas 
+de de perguntas e respostas similar a mescla entre stackoverflow e discord.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A aplicação pode ser usada para criar salas privadas de perguntas e respostas
+durante uma video aula ou curso bem como em uma sala de aula. Os usuários
+podem realizar perguntas e as perguntas mas votadas terão um destaque e 
+maior visibilidade para serem respondidas.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+As salas são privadas onde o acesso só pode ser realizado por meio de
+autenticação e com o código que é gerado ao criar essa sala. Diferentemente
+aos sistemas tradicionais, ao encerrar a sala somente os usuários presentes
+conseguirão ter acesso ao que foi discutido durante o evento.
 
-### `yarn test`
+## Imagens do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Página Inicial](https://raw.githubusercontent.com/felipepanegalli/nlw6-react-letmeask/main/github/pagina-inicial.png)
 
-### `yarn build`
+![Sala Q&A](https://raw.githubusercontent.com/felipepanegalli/nlw6-react-letmeask/main/github/sala-qa.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologias Utilizadas
+<img alt="Firebase" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"/>
+<img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+<img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
+<img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/>
+<img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+<img alt="TypeScript" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend
+- Firebase
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend
+- ReactJS
+- HTML / CSS / JS / Typescript
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Como executar o projeto
+1. Clone esse projeto com: ```git clone https://github.com/felipepanegalli/nlw6-react-letmeask.git```
+2. Renomeie o arquivo .env.example para .env.local
+3. Preencha as chaves nesse arquivo
+4. Execute o aplicativo com ```yarn start```
+5. Abra o navegador em http://localhost:3000 para ver o aplicativo
