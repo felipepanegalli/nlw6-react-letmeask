@@ -9,10 +9,7 @@
 Este projeto foi desenvolvido na semana de programação Next Level Week 6 organizada pela Rocketseat e ministrada pelo
 Diego Fernandes.
 
-O Letmeask é uma aplicação web com o propósito de criação de salas de de perguntas e respostas similar a mescla entre
-stackoverflow e discord.
-
-A aplicação pode ser usada para criar salas privadas de perguntas e respostas durante uma video aula ou curso bem como
+O Letmeask é uma aplicação web com o propósito de criação de salas de perguntas e respostas ao-vivo. A aplicação pode ser usada para criar salas privadas de perguntas e respostas durante uma video aula ou curso bem como
 em uma sala de aula. Os usuários podem realizar perguntas e as perguntas mas votadas terão um destaque e maior
 visibilidade para serem respondidas.
 
