@@ -41,6 +41,12 @@ acesso ao que foi discutido durante o evento.
 - ReactJS
 - HTML / CSS / JS / Typescript
 
+## Próximo nível
+- [ ] Adicionar tema Escuro/Claro
+- [ ] Refatorar os componentes para o padrão em pasta
+- [ ] Refatorar os estilos para Styled Component
+- [ ] Refatorar os alerts para os modais (react-modal e cogo-toast)
+
 ## Como executar o projeto
 
 1. Clone esse projeto com: ```git clone https://github.com/felipepanegalli/nlw6-react-letmeask.git```
@@ -54,3 +60,4 @@ acesso ao que foi discutido durante o evento.
 Felipe S. Panegalli
 
 <a href="https://www.linkedin.com/in/felipe-panegalli/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://www.instagram.com/panegalli/" target="_blank"><img src="	https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
