@@ -42,10 +42,14 @@ acesso ao que foi discutido durante o evento.
 - HTML / CSS / JS / Typescript
 
 ## Próximo nível
+- [ ] Tornar responsivo
+- [ ] Eslint/Prettier (CodeDrops#50)
 - [ ] Adicionar tema Escuro/Claro
 - [ ] Refatorar os componentes para o padrão em pasta
 - [ ] Refatorar os estilos para Styled Component
 - [ ] Refatorar os alerts para os modais (react-modal e cogo-toast)
+- [ ] Analisar a viabilidade de PWA
+- [ ] Analisar a viabilidade do Supabase (escalabilidade)
 
 ## Como executar o projeto
 
