@@ -44,9 +44,9 @@ acesso ao que foi discutido durante o evento.
 ## Próximo nível
 - [ ] Tornar responsivo
 - [ ] Eslint/Prettier (CodeDrops#50)
-- [ ] Adicionar tema Escuro/Claro
-- [ ] Refatorar os componentes para o padrão em pasta
-- [ ] Refatorar os estilos para Styled Component
+- [x] Adicionar tema Escuro/Claro
+- [x] Refatorar os componentes para o padrão de pastas
+- [x] Refatorar os estilos para Styled Component
 - [ ] Refatorar os alerts para os modais (react-modal e cogo-toast)
 - [ ] Analisar a viabilidade de PWA
 - [ ] Analisar a viabilidade do Supabase (escalabilidade)

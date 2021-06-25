@@ -1,6 +1,5 @@
-import React, {ButtonHTMLAttributes} from 'react';
-
-import '../styles/button.scss'
+import React, {ButtonHTMLAttributes} from "react";
+import {ButtonStyled} from "./styles";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
     isOutlined?: boolean
@@ -8,7 +7,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 const Button = ({isOutlined = false, ...props}: ButtonProps) => {
     return (
-        <button
+        <ButtonStyled
             className={`button ${isOutlined ? 'outlined' : ''}`}
             {...props}
         />

@@ -1,33 +1,28 @@
 import React from 'react';
-import logoImg from '../assets/images/logo.svg'
-import deleteImg from '../assets/images/delete.svg'
-import checkImg from '../assets/images/check.svg'
-import answerImg from '../assets/images/answer.svg'
-import '../styles/room.scss'
-import RoomCode from "../components/RoomCode";
-import {useHistory, useParams} from 'react-router-dom';
-import Question from '../components/Question';
-import useRoom from '../hooks/useRoom';
-import Button from "../components/Button";
-import {database} from '../services/firebase';
+import deleteImg from '../../assets/images/delete.svg'
+import checkImg from '../../assets/images/check.svg'
+import answerImg from '../../assets/images/answer.svg'
+import {useParams} from 'react-router-dom';
+import Question from '../../components/Question';
+import useRoom from '../../hooks/useRoom';
+import {database} from '../../services/firebase';
+import Header from "../../components/Header";
+import { PageRoom, RoomTitle } from './styles';
 
 type RoomParams = {
     id: string;
 }
 
-export const AdminRoom = () => {
+type Props = {
+    toggleTheme(): void;
+}
+
+export const AdminRoom = ({toggleTheme, ...props}: Props) => {
     // const {user} = useAuth();
-    const history = useHistory();
+
     const params = useParams<RoomParams>()
     const roomId = params.id;
     const {title, questions} = useRoom(roomId);
-
-    async function handleCloseRoom() {
-        await database.ref(`rooms/${roomId}`).update({
-            endedAt: new Date()
-        });
-        history.push('/');
-    }
 
     async function handleDeleteQuestion(questionId: string) {
         if (window.confirm("Têm certeza que deseja excluir esta pergunta?")) {
@@ -44,22 +39,13 @@ export const AdminRoom = () => {
     }
 
     return (
-        <div id='page-room'>
-            <header>
-                <div className="content">
-                    <img src={logoImg} alt="LetmeAsk"/>
-                    <div>
-                        <RoomCode code={roomId}/>
-                        <Button isOutlined onClick={handleCloseRoom}>Encerrar sala</Button>
-                    </div>
-                </div>
-            </header>
-
+        <PageRoom>
+            <Header roomId={roomId} toggleTheme={toggleTheme}/>
             <main className='content'>
-                <div className="room-title">
+                <RoomTitle>
                     <h1>Sala {title}</h1>
                     {questions.length > 0 && <span>{questions.length} Pergunta(s)</span>}
-                </div>
+                </RoomTitle>
 
                 <div className="question-list">
                     {questions.map(question => {
@@ -88,6 +74,6 @@ export const AdminRoom = () => {
                     })}
                 </div>
             </main>
-        </div>
+        </PageRoom>
     )
 }

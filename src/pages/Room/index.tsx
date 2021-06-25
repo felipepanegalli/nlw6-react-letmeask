@@ -1,19 +1,22 @@
 import React, {FormEvent, useState} from 'react';
-import logoImg from '../assets/images/logo.svg'
-import Button from "../components/Button";
-import '../styles/room.scss'
-import RoomCode from "../components/RoomCode";
+import Button from "../../components/Button";
 import {useParams} from 'react-router-dom';
-import useAuth from "../hooks/useAuth";
-import {database} from "../services/firebase";
-import Question from '../components/Question';
-import useRoom from '../hooks/useRoom';
+import useAuth from "../../hooks/useAuth";
+import {database} from "../../services/firebase";
+import Question from '../../components/Question';
+import useRoom from '../../hooks/useRoom';
+import Header from "../../components/Header";
+import { PageRoom, RoomTitle, UserInfo } from './styles';
 
 type RoomParams = {
     id: string;
 }
 
-export const Room = () => {
+type Props = {
+    toggleTheme(): void;
+}
+
+export const Room = ({toggleTheme, ...props}: Props) => {
     const {user} = useAuth();
     const params = useParams<RoomParams>()
     const [newQuestion, setNewQuestion] = useState('');
@@ -52,19 +55,13 @@ export const Room = () => {
     }
 
     return (
-        <div id='page-room'>
-            <header>
-                <div className="content">
-                    <img src={logoImg} alt="LetmeAsk"/>
-                    <RoomCode code={roomId}/>
-                </div>
-            </header>
-
+        <PageRoom>
+            <Header roomId={roomId} toggleTheme={toggleTheme}/>
             <main className='content'>
-                <div className="room-title">
+                <RoomTitle>
                     <h1>Sala {title}</h1>
                     {questions.length > 0 && <span>{questions.length} Pergunta(s)</span>}
-                </div>
+                </RoomTitle>
 
                 <form onSubmit={handleSendQuestion}>
                     <textarea
@@ -75,10 +72,10 @@ export const Room = () => {
                     </textarea>
                     <div className="form-footer">
                         {user ? (
-                            <div className='user-info'>
+                            <UserInfo className='user-info'>
                                 <img src={user.avatar} alt={user.name}/>
                                 <span>{user.name}</span>
-                            </div>
+                            </UserInfo>
                         ) : (
                             <span>Para enviar uma pergunta, <button>faça seu login</button>.</span>
                         )}
@@ -119,6 +116,6 @@ export const Room = () => {
                     })}
                 </div>
             </main>
-        </div>
+        </PageRoom>
     )
 }

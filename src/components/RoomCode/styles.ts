@@ -1,16 +1,17 @@
-.room-code {
+import styled from "styled-components";
+
+export const RoomCodeStyled = styled.button`
   height: 40px;
   border-radius: 8px;
   overflow: hidden;
-
-  background: #FFF;
-  border: 1px solid #835afd;
+  background: transparent;
+  border: 1px solid ${props => props.theme.colors.primary};
   cursor: pointer;
-
   display: flex;
+  color: ${props => props.theme.colors.lightText};
 
   div {
-    background: #835afd;
+    background: ${props => props.theme.colors.primary};
     padding: 9px 12px;
     display: flex;
     justify-content: center;
@@ -26,4 +27,4 @@
     font-size: 14px;
     font-weight: 500;
   }
-}
+`;
