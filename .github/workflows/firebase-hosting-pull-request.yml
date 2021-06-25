@@ -15,3 +15,5 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LETMEASK_19B9D }}'
           projectId: letmeask-19b9d
+        env:
+          FIREBASE_CLI_PREVIEWS: hostingchannels
