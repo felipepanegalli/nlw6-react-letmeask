@@ -1,10 +1,13 @@
 # Next Level Week 6 Together - Letmeask
+<h1 align="center">
+    <img src="https://raw.githubusercontent.com/felipepanegalli/nlw6-react-letmeask/0deab3cdb09a4e785642c127404090d3dda2c9fc/src/assets/images/logo.svg" title="letmeask" />
+</h1>
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/felipepanegalli/nlw6-react-letmeask/blob/main/LICENSE.md)
 
 [Versão em Português](https://github.com/felipepanegalli/nlw6-react-letmeask) | [English Version](https://github.com/felipepanegalli/nlw6-react-letmeask)
 
-## Sobre o projeto
+## 📝 Sobre o projeto
 
 Este projeto foi desenvolvido na semana de programação Next Level Week 6 organizada pela Rocketseat e ministrada pelo
 Diego Fernandes.
@@ -17,13 +20,16 @@ As salas são privadas onde o acesso só pode ser realizado por meio de autentic
 essa sala. Diferentemente aos sistemas tradicionais, ao encerrar a sala somente os usuários presentes conseguirão ter
 acesso ao que foi discutido durante o evento.
 
-## Imagens do Projeto
+
+Você pode acessar a aplicação [Nesse Link ](https://letmeask-19b9d.web.app/) 🔗
+
+## 🏞️ Imagens do Projeto
 
 ![Página Inicial](https://raw.githubusercontent.com/felipepanegalli/nlw6-react-letmeask/main/github/pagina-inicial.png)
 
 ![Sala Q&A](https://raw.githubusercontent.com/felipepanegalli/nlw6-react-letmeask/main/github/sala-qa.png)
 
-## Tecnologias Utilizadas
+## 🖥️ Tecnologias Utilizadas
 
 <span><img alt="Firebase" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"/></span>
 <span><img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/></span>
@@ -41,7 +47,7 @@ acesso ao que foi discutido durante o evento.
 - ReactJS
 - HTML / CSS / JS / Typescript
 
-## Próximo nível
+## 📈 Próximo nível
 - [ ] Tornar responsivo
 - [ ] Eslint/Prettier (CodeDrops#50)
 - [x] Adicionar tema Escuro/Claro
@@ -51,7 +57,7 @@ acesso ao que foi discutido durante o evento.
 - [ ] Analisar a viabilidade de PWA
 - [ ] Analisar a viabilidade do Supabase (escalabilidade)
 
-## Como executar o projeto
+## 📀 Como executar o projeto
 
 1. Clone esse projeto com: ```git clone https://github.com/felipepanegalli/nlw6-react-letmeask.git```
 2. Instale as dependências com: ```yarn install ou npm install```
@@ -60,7 +66,7 @@ acesso ao que foi discutido durante o evento.
 5. Execute o aplicativo com ```yarn start```
 6. Abra o navegador em http://localhost:3000 para ver o aplicativo
 
-## Autor
+## 🧑🏻‍💻 Autor
 Felipe S. Panegalli
 
 <a href="https://www.linkedin.com/in/felipe-panegalli/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
